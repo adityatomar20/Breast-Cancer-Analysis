@@ -1,15 +1,41 @@
-# Diagnostic-Breast-Cancer-Data-Analysis
+### Dataset Overview
+The dataset comprises a total of 569 data points with 32 attributes.
+The first attribute serves as an ID column, the second is our target variable, and the remaining 30 attributes represent features extracted from digitized images of fine needle aspirates (FNA).
+The target variable has two classes: benign and malignant.
+Class distribution: 357 benign samples and 212 malignant samples.
 
-I'll be analyzing data from breast cancer research to predict if a breast mass is benign or malignant. 
+### Notebooks Summary
+#### Notebook 1: Initial Implementations - [first notebook](https://github.com/additanwar/Breast-Cancer-WDBC-Data-Analysis/blob/main/WDBC_Data_Analysis_1.ipynb)
+In this notebook, I have laid the groundwork with basic implementations of four classification algorithms:
 
-### About Data
-We have total 569 data points and 32 attributes. 
-The first attribute is an ID column, second is our target variable and rest 30 are features of the mass, computed from a digitized image of a fine needle aspirate (FNA). 
-The target class distribution for these sample points is 357 benign and 212 malignant.
+#### Majority Classification (Benchmark):
 
-In the [first notebook](https://github.com/additanwar/Breast-Cancer-WDBC-Data-Analysis/blob/main/WDBC_Data_Analysis_1.ipynb), I have basic implementations of 4 classification algorithms: a Majority classification (Benchmark), KNN, Decision Tree and Logistic Regression.
+Establishing a baseline for performance comparison.
+##### KNN (K-Nearest Neighbors):
+Utilizing the KNN algorithm for classification.
 
-In the [second notebook](https://github.com/additanwar/Breast-Cancer-WDBC-Data-Analysis/blob/main/WDBC_Data_Analysis_2.ipynb), I have also implemented hyperparameter tuning for these algrithms(, and SVM) using Bayesian Search.
+##### Decision Tree:
+Implementing a Decision Tree classifier.
+
+##### Logistic Regression:
+Applying Logistic Regression for Predictive Modeling.
+
+#### Notebook 2: Hyperparameter Tuning - [second notebook](https://github.com/additanwar/Breast-Cancer-WDBC-Data-Analysis/blob/main/WDBC_Data_Analysis_2.ipynb)
+Building upon the initial implementations, the second notebook introduces hyperparameter tuning for enhanced model performance. The following algorithms undergo optimization:
+
+##### KNN (K-Nearest Neighbors):
+Fine-tuning hyperparameters using Bayesian Search.
+
+##### Decision Tree:
+Optimizing Decision Tree parameters for improved accuracy.
+
+##### Logistic Regression:
+Refining Logistic Regression settings for enhanced predictive power.
+##### SVM (Support Vector Machine):
+Implementing hyperparameter tuning to optimize SVM model performance.
 
 #### Lift Curve
 <img width="617" alt="image" src="https://github.com/additanwar/Breast-Cancer-WDBC-Data-Analysis/assets/85642859/dba2578f-8bc7-4ae2-a92a-cb773f6d296a">
+
+### Conclusion
+This dual-notebook analysis provides a comprehensive exploration of breast cancer diagnostic predictions. From initial algorithm implementations to advanced hyperparameter tuning, the project aims to enhance predictive accuracy and identify the most effective model for distinguishing between benign and malignant breast masses.
